@@ -29,7 +29,7 @@ mkdir -p $BIN $PROXY
 cd $BIN
 if [ ! -f "$BIN/xray" ]; then
   echo -e "${YELLOW}⬇️ Descargando Xray-core...${NC}"
-  curl -L -o xray.zip https://github.com/jm-nic/Scrip/blob/main/Xray-android-arm64-v8a.zip
+  curl -L -o xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-android-arm64-v8a.zip
   unzip xray.zip
   chmod +x xray
   echo -e "${GREEN}✅ Xray-core listo${NC}"
@@ -77,7 +77,7 @@ EOF
 cd $PROXY
 if [ ! -f "$PROXY/proxychains4" ]; then
   echo -e "${YELLOW}🔗 Instalando proxychains4...${NC}"
-  git clone https://github.com/jm-nic/proxychains-ng src
+  git clone https://github.com/rofl0r/proxychains-ng.git src
   cd src
   ./configure --prefix=$PROXY
   make && make install
@@ -117,7 +117,7 @@ banner() {
   echo "║ 🌀 Direct HTTP - 🔥 @JMNIC 🔥     ║"
   echo "╠════════════════════════════════════╣"
   echo "║ 📁 Config: $CONF"
-  echo "║ 📡 Proxy: 127.0.0.1:10808"
+  echo "║ 📡 Proxy: 127.00.1:10808"
   echo "╚════════════════════════════════════╝"
   echo -e "${NC}"
 }
