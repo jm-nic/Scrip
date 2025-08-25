@@ -117,7 +117,7 @@ banner() {
   echo "║ 🌀 Direct HTTP - 🔥 @JMNIC 🔥     ║"
   echo "╠════════════════════════════════════╣"
   echo "║ 📁 Config: $CONF"
-  echo "║ 📡 Proxy: Direct"
+  echo "║ 📡 Proxy: 127.0.0.1:10808"
   echo "╚════════════════════════════════════╝"
   echo -e "${NC}"
 }
